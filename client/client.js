@@ -1,10 +1,11 @@
-var rp = require('request-promise');
+const rp = require('request-promise');
+const inputText = process.argv[2];
 
-var options = {
+let options = {
     method: 'POST',
     uri: 'http://localhost:3000/text-analyzer',
     body: {
-        text: 'some text'
+        text: inputText
     },
     json: true
 };
