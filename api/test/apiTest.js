@@ -19,7 +19,7 @@ describe('POST /text-analyzer', () => {
     it("should respond with an empty body if not text field is found in the request body",
         (done) => {
             let data = {
-                badTextField: "Sample test from apiTest.js"
+                badTextField: "Sample test from apiTest.js with bad field"
             }
             request(app)
                 .post('/text-analyzer')
@@ -27,7 +27,7 @@ describe('POST /text-analyzer', () => {
                 .set('Accept', 'application/json')
                 .expect('Content-Type', /json/)
                 .expect(400)
-                .expect('Undefined text', done);
+                .expect({ "error": "Undefined text" }, done);
         });
 });
 
