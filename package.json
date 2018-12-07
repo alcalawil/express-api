@@ -1,0 +1,19 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "A simple express API using Chai as testing framework and a reques-promise as client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "node",
+    "nodejs",
+    "chai",
+    "request-promise\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[3~"
+  ],
+  "author": "alcalawil",
+  "license": "ISC"
+}
