@@ -19,3 +19,9 @@ A simple express API using Chai as testing framework and a request-promise as cl
 
 - From the api folder
 - `npm test`
+
+## Use with Docker
+
+- From the api folder
+- `docker docker build -t express-api:1.0 .`
+- `docker run -p 5000:5000 express-api:1.0`
